@@ -1,0 +1,68 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+.redcontainerdiv {
+  position: relative;
+  display: inline-block;
+}
+
+.smallerredcontainerdiv {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.playerDiv {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.playerhealthBar {
+  background-color: yellow;
+  height: 30px;
+  width: 100%;
+}
+
+.playerLife {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.timer {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.enemyDiv {
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+.enemyhealthBar {
+  background-color: yellow;
+  height: 30px;
+}
+
+.enemyLife {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
