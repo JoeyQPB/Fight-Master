@@ -2,6 +2,7 @@
   /* margin: 0;
   padding: 0; */
   box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
 }
 
 .redcontainerdiv {
@@ -19,20 +20,21 @@
 
 .playerDiv {
   position: relative;
-  height: 30px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  border: 4px solid white;
+  border-right: none;
 }
 
 .playerhealthBar {
-  background-color: yellow;
+  background-color: red;
   height: 30px;
   width: 100%;
 }
 
 .playerLife {
-  background-color: blue;
+  background-color: #818cf8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -41,28 +43,31 @@
 }
 
 .timer {
-  background-color: red;
-  height: 100px;
+  background-color: black;
+  height: 50px;
   width: 100px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  border: 4px solid white;
 }
 
 .enemyDiv {
   position: relative;
-  height: 30px;
   width: 100%;
+  border: 4px solid white;
+  border-left: none;
 }
 
 .enemyhealthBar {
-  background-color: yellow;
+  background-color: red;
   height: 30px;
 }
 
 .enemyLife {
-  background-color: blue;
+  background-color: #818cf8;
   position: absolute;
   top: 0;
   bottom: 0;
