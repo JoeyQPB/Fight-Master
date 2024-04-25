@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fight Master</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- red container div -->
-    <div class="redcontainerdiv">
-      <div class="smallerredcontainerdiv">
-        <!-- player health -->
-        <div class="playerDiv">
-          <div class="playerhealthBar"></div>
-          <div id="playerHealth" class="playerLife"></div>
-        </div>
 
-        <!-- timer -->
-        <div id="timer" class="timer">10</div>
-        <!-- enemy health -->
-        <div class="enemyDiv">
-          <div class="enemyhealthBar"></div>
-          <div id="enemyHealth" class="enemyLife"></div>
-        </div>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fight Master</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="instructions">
+    <div class="Player_1">
+      <h4> Player 1 </h4>
+      <p> Move: A, W, D</p>
+      <p> Attack: space</p>
+    </div>
+    <div class="Player_2">
+      <h4> Player 2 </h4>
+      <p> Move: Arrows Left, Up, Right</p>
+      <p> Attack: Shift</p>
+    </div>
+  </div>
+
+  <!-- red container div -->
+  <div class="redcontainerdiv">
+    <div class="smallerredcontainerdiv">
+      <!-- player health -->
+      <div class="playerDiv">
+        <div class="playerhealthBar"></div>
+        <div id="playerHealth" class="playerLife"></div>
       </div>
 
-      <div id="result" class="resultStyle">Tie</div>
-      <canvas></canvas>
+      <!-- timer -->
+      <div id="timer" class="timer">10</div>
+      <!-- enemy health -->
+      <div class="enemyDiv">
+        <div class="enemyhealthBar"></div>
+        <div id="enemyHealth" class="enemyLife"></div>
+      </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/utils.js"></script>
-    <script src="./js/classes.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+    <div id="result" class="resultStyle">Tie</div>
+
+    <canvas></canvas>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/classes.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
